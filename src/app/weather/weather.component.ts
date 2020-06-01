@@ -39,13 +39,13 @@ export class WeatherComponent implements OnInit {
     console.log(formValues);
     this.lat = formValues.latitude;
     this.lng = formValues.longitude;
+    let yearInc = formValues.numberOfYears;
     for (let i = 0; i < formValues.numberOfYears; i++) {
       let weatherParams = formValues.latitude + ',' + formValues.longitude + ',' + timeStamp;
       this.weatherAPIService
         .getWeatherInfo(weatherParams)
         .subscribe((success: any) => {
           console.log(success);
-          let yearInc = formValues.numberOfYears;;
           let d = date;
           let ye = date.getFullYear() + yearInc;
           let mo = date.getMonth() + 1;
