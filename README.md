@@ -1,3 +1,23 @@
+******** Task Description ********
+
+* Get weather info for a given location for today and same time in the previous "N" years.
+
+* Build a UI that will consume the weather API (provided below), extract the required details and show the results:
+
+-> Inputs: Latitude, Longitude, Number of Years (MAX 5)
+-> Perform Validations
+-> Invoke the weather API, as many times as needed
+-> Show the following details for each year on the UI.
+   *Date, Time, Temperature, SunriseTime, SunsetTime
+-> Also show location in a map using google map API
+-> It has to be responsive
+
+
+* Use the following Public API to get the data
+https://api.darksky.net/forecast/<secretkey>/<lat>,<long>,<epochtime>
+
+
+
 # WeatherApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
